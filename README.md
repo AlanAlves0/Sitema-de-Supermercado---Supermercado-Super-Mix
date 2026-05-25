@@ -43,15 +43,14 @@ O sistema permite cadastrar produtos, consultar, atualizar e excluir registros, 
 O banco de dados utilizado no projeto foi o MySQL.
 
 Nome do banco:
-sql
 supermercado
 
-##Script SQL de Criação do Banco e Tabela
+## Script SQL de Criação do Banco e Tabela
 CREATE DATABASE supermercado;
 
 USE supermercado;
 
-CREATE TABLE IF NOT EXISTS produtos (
+CREATE TABLE produtos (
     codigo VARCHAR(20) PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     categoria VARCHAR(100) NOT NULL,
@@ -61,7 +60,7 @@ CREATE TABLE IF NOT EXISTS produtos (
     imagem VARCHAR(255)
 );
 
-##Exemplo de Produtos para Teste
+## Exemplo de Produtos para Teste
 INSERT INTO produtos 
 (codigo, nome, categoria, quantidade, preco, data_cadastro, imagem)
 VALUES
